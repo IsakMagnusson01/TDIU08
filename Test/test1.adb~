@@ -1,0 +1,15 @@
+procedure Test1 is
+   
+   function My_Func (I : in Integer)
+		    return Boolean is
+   begin
+      
+      return I > 10;
+      
+   end My_Func;
+   
+begin
+   
+   My_Func(9);
+   
+end Test1;

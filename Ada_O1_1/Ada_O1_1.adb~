@@ -1,0 +1,124 @@
+with Ada.Text_IO;
+use Ada.Text_IO;
+with Ada.Float_Text_IO;
+use Ada.Float_Text_IO;
+with Ada.Integer_Text_IO;
+use Ada.Integer_Text_IO;
+
+procedure In_Och_Utmatning is
+
+	  I : Integer;
+	  F : Float;
+	  C : Character;
+	  S : String(1..5);
+
+begin
+	  Put("Skriv in ett heltal: ");
+	  Get(I);
+	  Skip_Line;
+	  Put("Du skrev in talet: ");
+	  Put(I, 0);
+	  
+	  New_Line(2);
+	  
+	  Put("Skriv in fem heltal: ");
+	  Get(I);
+	  Get(C);
+	  Put("Du skrev in talen: ");
+	  Put(I, 1);
+	  Put(C);
+	  Get(I);
+	  Put(I, 1);
+	  Put(C);
+	  Get(I);
+	  Put(I, 1);
+	  Put(C);
+	  Get(I);
+	  Put(I, 1);
+	  Put(C);
+	  Get(I);
+	  Skip_Line;
+	  Put(I, 1);
+	  
+	  New_Line(2);
+	  
+	  Put("Skriv in ett flyttal: ");
+	  Get(F);
+	  Skip_Line;
+	  Put("Du skrev in flyttalet: ");
+	  Put(F, 2, 3, 0);
+
+	  New_Line(2);
+
+	  Put("Skriv in ett heltal och ett flyttal: ");
+	  Get(I);
+	  Get(F);
+	  Skip_Line;
+	  Put("Du skrev in heltalet: ");
+	  Put(I, 7);
+	  New_Line;
+	  Put("Du skrev in flyttalet: ");
+	  Put(F, 1, 4, 0);
+
+	  New_Line(2);
+
+	  Put("Skriv in ett tecken: ");
+	  Get(C);
+	  Put("Du skrev in tecknet: ");
+	  Put(C);
+
+	  New_Line(2);
+
+	  Put("Skriv in en sträng med 5 tecken: ");
+	  Get(S(1..5));
+	  Put("Du skrev in strängen: ");
+	  Put(S(1..5));
+
+	  New_Line(2);
+
+	  Put("Skriv in en sträng med 3 tecken: ");
+	  Get(S(1..3));
+	  Put("Du skrev in strängen: ");
+	  Put(S(1..3));
+
+	  New_Line(2);
+
+	  Put("Skriv in ett heltal och en sträng med 5 tecken: ");
+	  Get(I);
+	  Get(C);
+	  Get(S(1..5));
+	  Put("Du skrev in talet |");
+	  Put(I, 1);
+	  Put("| och strängen |");
+	  Put(S(1..5));
+	  Put("|");
+
+	  New_Line(2);
+
+	  Put("Skriv in en sträng med 3 tecken och ett flyttal: ");
+	  Get(S(1..3));
+	  Get(F);
+	  Skip_Line;
+	  Put("Du skrev in "" ");
+	  Put(F, 1, 3, 0);
+	  Put(""" och """);
+	  Put(S(1..3));
+	  Put("""");
+
+	  New_Line(2);
+
+	  Put("Skriv in en sträng som är maximalt 5 tecken: ");
+	  I := 5;
+	  Get_Line(S,I);
+	  Put("Du skrev in strängen: ");
+	  Put_Line(S(1..I));
+
+	  New_Line;
+
+	  Put("Skriv in en sträng som är maximalt 5 tecken: ");
+	  I := 5;
+	  Get_Line(S,I);
+	  Put("Du skrev in strängen: ");
+	  Put_Line(S(1..I));
+	  
+end In_Och_Utmatning;

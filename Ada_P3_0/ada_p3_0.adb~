@@ -1,0 +1,53 @@
+-- isama219: Arbetat enskilt
+
+procedure Ada_P3_0 is
+   
+   type Data_Array is
+     array (-23..-21) of Float;
+   
+   type Sub_Data is
+     array (Boolean, -50..-47) of Data_Array;
+   
+   type Data is
+      record
+	 M, K : Sub_Data;
+      end record;
+   
+   -- Get Data_Array
+   procedure Get (Data_Array : out Data_Array) is
+   begin
+      
+      for I in Data_Array'Range loop
+	 Get(Data_Array(I));
+      end loop;
+      
+   end Get;
+   
+   
+   -- Get Sub_Data ----------
+   procedure Get (Sub_Data : out Sub_Data) is
+   begin
+      
+      for M in reverse Sub_Data'Range(2) loop
+	 for N in Sub_Data'Range(1) loop
+	    Get(Sub_Data(N, M));
+	 end loop;
+      end loop;
+      
+   end Get;
+   
+   
+   -- Get Data ----------
+   procedure Get (Data : out Data) is
+   begin
+      
+      Get(Data.M);
+      Get(Data.K);
+      
+   end Get;
+   
+   T : Data;
+   
+begin
+   
+end Ada_P3_0;

@@ -1,0 +1,18 @@
+-- isama219: Arbetat enskilt
+
+with Ada.Text_Io;         use Ada.Text_Io;
+with Ada.Integer_Text_Io; use Ada.Integer_Text_Io;
+with Ada.Float_Text_Io;   use Ada.Float_Text_Io;
+  
+procedure Ada_O3_2 is
+   
+   type Index is range 31..35;
+   
+   type Data1 is
+     array (Index) of Float;
+   
+begin
+   
+   
+   
+end Ada_O3_2;

@@ -1,0 +1,13 @@
+procedure Lektion2 is
+   
+   type Koordinat is
+      record
+	 X : Integer;
+	 Y : Integer;
+      end record;
+   
+begin
+   
+   
+   
+end Lektion2;

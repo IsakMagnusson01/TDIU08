@@ -1,0 +1,116 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK_05
+
+U ada_o11_1%b		ada_o11_1.adb		ee5afe3c NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20230707070819 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20230707070819 55716239 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_o11_1.adb		20240916183138 efd61c13 ada_o11_1%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [ada_o11_1 standard 8 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|2r6 2r45 3r6 3r45 4r6 4r45 5r6 5r45 6r6 6r45
+X 3 a-flteio.ads
+20K13*Float_Text_IO[12|46] 15|4w10 4r49
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 15|3w10 3r49
+X 6 a-numeri.ads
+16K13*Numerics 32e17 15|5r10 5r49 6w10 6r49
+21N4*Pi 15|50r36 51r36
+X 7 a-nuelfu.ads
+18K22*Elementary_Functions[8|39] 15|5w19 5r58
+X 8 a-ngelfu.ads
+52V13*Sqrt{float} 15|19s15[7|18]
+129V13*Arcsin{float} 15|50s15[7|18]
+137V13*Arccos{float} 15|51s15[7|18]
+X 11 a-textio.ads
+57K13*Text_IO 727e16 15|2w10 2r49
+86I12*Field{integer}
+264U14*New_Line 15|41s10 74s10 79s10 84s10 121s9
+273U14*Skip_Line 15|36s10 68s10 115s9 139s10
+465U14*Put 15|33s10 39s10 64s10 66s10 71s10 73s10 76s10 78s10 81s10 83s10
+. 113s9 119s9 137s10
+508U14*Put_Line 15|130s9 131s9 132s9 133s9 134s9 143s10 154s4 166s10
+X 12 a-tiflio.ads
+60U14*Get 15|65s10[3|20] 67s10[3|20]
+82U14*Put 15|40s10[3|20] 72s10[3|20] 77s10[3|20] 82s10[3|20]
+84i7 Fore{11|86I12} 15|40r17[3|20] 72r18[3|20] 77r18[3|20] 82r18[3|20]
+85i7 Aft{11|86I12} 15|40r28[3|20] 72r29[3|20] 77r29[3|20] 82r29[3|20]
+86i7 Exp{11|86I12} 15|40r38[3|20] 72r39[3|20] 77r39[3|20] 82r39[3|20]
+X 13 a-tiinio.ads
+59U14*Get 15|34s10[4|18] 35s10[4|18] 114s9[4|18] 138s10[4|18]
+80U14*Put 15|118s9[4|18] 120s9[4|18]
+82i7 Width{11|86I12} 15|118r16[4|18] 120r24[4|18]
+X 15 ada_o11_1.adb
+8U11*ada_o11_1 8b11 172l5 172t14
+12V13 Calculate_Hypotenuse{float} 12b13 12>35 12>38 23l8 23t28 38s15
+12i35 A{integer} 19r26
+12i38 B{integer} 19r38
+15f10 H{float} 19m10 21r17
+27U14 Hypotenuse_Program 27b14 43l8 43t26 160s10
+29i10 A{integer} 34m14 38r36
+29i13 B{integer} 35m14 38r38
+30f10 H{float} 38m10 40r14
+47U14 Calculate_Angles 47b14 47>32 47>36 48<28 48<32 48<36 54l8 54t24 70s10
+47f32 Hc{float} 50r25 51r25
+47f36 Sa{float} 50r22 51r22
+48f28 Va{float} 50m9 52r24
+48f32 Vb{float} 51m9 52r29
+48f36 Vc{float} 52m9
+59U14 Angle_Program 59b14 88l8 88t21 162s10
+61f10 Va{float} 70m35 72r14
+61f14 Vb{float} 70m39 77r14
+61f18 Vc{float} 70m43 82r14
+61f22 Hc{float} 65m14 70r27
+61f26 Sa{float} 67m14 70r31
+92V13 Calculate_Factorial{integer} 92b13 92>34 103l8 103t27 117s22
+92i34 N{integer} 97r21
+94i9 Result{integer} 96m9 98m13 98r23 101r16
+97i13 I{integer} 98r30
+107U14 Factorial_Program 107b14 123l8 123t25 164s10
+109i9 N{integer} 114m13 117r42 118r13
+109i12 Factorial{integer} 117m9 120r13
+127U14 Menu_Selection 127b14 127<30 146l8 146t22 158s7
+127i30 Selection{integer} 138m14 140r13 140r32
+150i4 Selection{integer} 158m22 159r10 161r13 163r13
+

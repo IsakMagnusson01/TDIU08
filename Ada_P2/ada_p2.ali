@@ -1,0 +1,95 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U ada_p2%b		ada_p2.adb		a46b35b8 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+Z system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+Z system.val_real%s	s-valrea.adb		s-valrea.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20230707070819 bb51c45a ada.numerics%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_p2.adb		20241008063604 a60fea8b ada_p2%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-conca3.ads		20230707070819 0b705ca5 system.concat_3%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-fatflt.ads		20230707070819 11beb392 system.fat_flt%s
+D s-fatgen.ads		20230707070819 49cbaf86 system.fat_gen%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-valrea.ads		20230707070819 0e7fecd5 system.val_real%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [ada_p2 standard 8 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|3r6 3r32 4r6 4r32 5r6 5r32 6r6 6r32
+X 3 a-flteio.ads
+20K13*Float_Text_IO[10|46] 13|5w10 5r36
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 13|4w10 4r36
+X 6 a-numeri.ads
+16K13*Numerics 32e17 13|6w10 6r36
+X 9 a-textio.ads
+57K13*Text_IO 727e16 13|3w10 3r36
+86I12*Field{integer}
+264U14*New_Line 13|54s4 71s4
+273U14*Skip_Line 13|35s7 50s4 62s4
+454U14*Get 13|49s4
+465U14*Put 13|31s7 33s7 48s4 52s4 58s4 60s4 65s4 67s4 69s4 76s4 78s4 80s4
+X 10 a-tiflio.ads
+60U14*Get 13|34s7[3|20] 59s4[3|20]
+82U14*Put 13|53s4[3|20] 66s4[3|20] 70s4[3|20] 79s4[3|20] 81s4[3|20]
+84i7 Fore{9|86I12} 13|53r16[3|20] 66r11[3|20] 70r16[3|20] 79r11[3|20] 81r16[3|20]
+85i7 Aft{9|86I12} 13|53r27[3|20] 66r22[3|20] 70r27[3|20] 79r22[3|20]
+86i7 Exp{9|86I12} 13|53r37[3|20] 66r32[3|20] 70r37[3|20] 79r32[3|20]
+X 11 a-tiinio.ads
+59U14*Get 13|32s7[4|18] 61s4[4|18]
+80U14*Put 13|68s4[4|18] 77s4[4|18]
+82i7 Width{9|86I12} 13|68r11[4|18] 77r11[4|18]
+X 13 ada_p2.adb
+8U11*Ada_P2 8b11 83l5 83t11
+10V13 Multiply{float} 10b13 10>23 16l8 16t16 51s14
+10a23 S{string} 14r40
+18V14 "*"{float} 18b14 18>18 19>18 25l9 25t11 64s16
+18f18 Left{float} 23r29
+19i18 Right{integer} 23r42
+27U14 Add 27b14 27<19 28<19 28<22 39l8 39t11 75s4
+27i19 I{integer} 32m11 37r38
+28f19 F{float} 34m11 37r43
+28f22 Result{float} 37m7
+41f4 F{float} 59m8 64r14 66r8 75m11 79r8
+41f7 Result{float} 51m4 53r8 64m4 70r8 75m14 81r8
+42i4 I{integer} 61m8 64r18 68r8 75m8 77r8
+43a4 S{string} 49m8 51r23 52r26
+

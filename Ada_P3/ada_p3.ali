@@ -1,0 +1,76 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV SPARK_05
+
+U ada_p3%b		ada_p3.adb		8f2d3c6b NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_p3.adb		20241022070924 21d9e906 ada_p3%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [ada_p3 standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 8|2r6 2r29
+X 6 a-textio.ads
+57K13*Text_IO 727e16 8|2w10 2r33
+273U14*Skip_Line 8|114s4
+381U14*Get 8|25s7 40s13 57s16 61s13
+392U14*Put 8|72s7 84s13 98s16 102s13
+454U14*Get 8|24s7 26s7
+465U14*Put 8|71s7 73s7 112s4 115s4
+X 8 ada_p3.adb
+4U11*Ada_P3 4b11 118l5 118t11
+6R9 Inner_Record 9e17 12r25 18r37 68r36
+8a10 V{string} 24m23 71r23
+8a13 S{string} 26m23 73r23
+11A9 Data_Array(6R9)<boolean> 15r52 31r36 78r35
+14A9 Data_Matrix(11A9)<character><integer> 47r37 91r36 108r8
+18U14 Get 18b14 18<19 28l8 28t11 38s10
+18r19 Item_Record{6R9} 24m11 24r11 26m11 26r11
+20e7 C{character} 25m11
+31U14 Get 31b14 31<19 44l8 44t11 55s13
+31a19 Item_Array{11A9} 37r24 38m14 38r14 39r18
+33e7 C{character} 40m17
+37b11 B{boolean} 38r25 39r13
+47U14 Get 47b14 47<19 65l8 65t11 113s4
+47a19 Item_Matrix{14A9} 53r16 54r27 55m17 55r17 56r21 60r18
+49e7 C{character} 57m20 61m17
+53e11 M{character} 55r29 60r13
+54i14 N{integer} 55r32 56r16
+68U14 Put 68b14 68>19 75l8 75t11 82s10
+68r19 Item_Record{6R9} 71r11 73r11
+78U14 Put 78b14 78>19 88l8 88t11 96s13
+78a19 Item_Array{11A9} 81r24 82r14 83r18
+81b11 B{boolean} 82r25 83r13
+91U14 Put 91b14 91>19 106l8 106t11 116s4
+91a19 Item_Matrix{14A9} 94r24 95r19 96r17 97r21 101r18
+94e11 M{character} 96r29 101r13
+95i14 N{integer} 96r32 97r16
+108a4 T{14A9} 113m8 116r8
+

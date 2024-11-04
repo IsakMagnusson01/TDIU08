@@ -1,0 +1,84 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK_05
+
+U ada_p3_0%b		ada_p3_0.adb		ecfe4bf5 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_p3_0.adb		20241015072927 a380d938 ada_p3_0%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [ada_p3_0 standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 10|2r6 2r29 3r6 3r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[8|46] 10|3w10 3r33
+X 7 a-textio.ads
+57K13*Text_IO 727e16 10|2w10 2r33
+86I12*Field{integer}
+273U14*Skip_Line 10|103s4
+392U14*Put 10|59s13 74s16 78s13 90s7
+465U14*Put 10|101s4 104s4
+X 8 a-tiflio.ads
+60U14*Get 10|23s10[3|20]
+82U14*Put 10|57s10[3|20]
+84i7 Fore{7|86I12} 10|57r30[3|20]
+85i7 Aft{7|86I12} 10|57r41[3|20]
+86i7 Exp{7|86I12} 10|57r51[3|20]
+X 10 ada_p3_0.adb
+5U11*Ada_P3_0 5b11 107l5 107t13
+7A9 Data_Array(float)<integer> 11r35 19r37 53r36
+10A9 Sub_Data(7A9)<integer><boolean> 15r17 30r37 67r36
+13R9 Data 16e17 43r40 86r39 96r8
+15a10 M{10A9} 46m26 89r26
+15a13 K{10A9} 47m26 91r26
+19U14 Get 19b14 19<19 26l8 26t11 35s13
+19a19 Inner_Array{7A9} 22r16 23m14 23r14
+22i11 I{integer} 23r26
+30U14 Get 30b14 30<19 39l8 39t11 46s7 47s7
+30a19 Data_Matrix{10A9} 33r24 34r27 35m17 35r17
+33i11 M{integer} 35r29
+34b14 N{boolean} 35r32
+43U14 Get 43b14 43<19 49l8 49t11 102s4
+43r19 Data_Structure{13R9} 46m11 46r11 47m11 47r11
+53U14 Put 53b14 53>19 63l8 63t11 72s13
+53a19 Inner_Array{7A9} 56r24 57r14 58r18
+56i11 I{integer} 57r26 58r13
+67U14 Put 67b14 67>19 82l8 82t11 89s7 91s7
+67a19 Data_Matrix{10A9} 70r24 71r27 72r17 73r21 77r18
+70i11 M{integer} 72r29 77r13
+71b14 N{boolean} 72r32 73r16
+86U14 Put 86b14 86>19 93l8 93t11 105s4
+86r19 Data_Structure{13R9} 89r11 91r11
+96r4 T{13R9} 102m8 105r8
+

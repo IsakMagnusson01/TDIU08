@@ -1,0 +1,106 @@
+V "GNAT Lib v10"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK_05
+
+U ada_o3_2%b		ada_o3_2.adb		5b91c281 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-flteio.ads		20230707070819 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiflio.ads		20230707070819 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D ada_o3_2.adb		20241007155147 e2a4d9e8 ada_o3_2%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [ada_o3_2 standard 7 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|3r6 3r31 4r6 4r31 5r6 5r31
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 12|5w10 5r35
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 12|4w10 4r35
+X 8 a-textio.ads
+57K13*Text_IO 727e16 12|3w10 3r35
+86I12*Field{integer}
+264U14*New_Line 12|155s4 164s4
+273U14*Skip_Line 12|152s4 161s4 170s4
+381U14*Get 12|58s13 89s7
+392U14*Put 12|40s13 74s13 99s7 129s16 135s13
+454U14*Get 12|55s10
+465U14*Put 12|71s10 150s4 153s4 159s4 162s4 168s4 171s4
+508U14*Put_Line 12|149s4 158s4 167s4
+X 9 a-tiflio.ads
+60U14*Get 12|27s10[3|20]
+82U14*Put 12|37s10[3|20]
+84i7 Fore{8|86I12} 12|37r23[3|20]
+85i7 Aft{8|86I12} 12|37r34[3|20]
+86i7 Exp{8|86I12} 12|37r44[3|20]
+X 10 a-tiinio.ads
+59U14*Get 12|111s13[4|18]
+80U14*Put 12|126s13[4|18]
+82i7 Width{8|86I12} 12|126r28[4|18]
+X 12 ada_o3_2.adb
+7U11*Ada_O3_2 7b11 174l5 174t13
+9A9 Data1(float)<integer> 22r30 33r29 142r10
+12A9 Data2_Sub(string)<character> 16r25 48r34 67r33
+15A9 Data2(12A9)<boolean> 82r30 95r29 143r10
+18A9 Data3(integer)<integer><character> 105r30 118r29 144r10
+22U14 Get 22b14 22<19 30l8 30t11 151s4
+22a19 Data{9A9} 26r24 27m14 27r14
+26i11 I{integer} 27r19
+33U14 Put 33b14 33>19 45l8 45t11 154s4
+33a19 Data{9A9} 36r24 37r14 39r18
+36i11 I{integer} 37r19 39r13
+48U14 Get 48b14 48<19 64l8 64t11 88s7 90s7
+48a19 Sub_Data{12A9} 54r24 55m14 55r14 57r18
+50e7 L{character} 58m17
+54e11 I{character} 55r23 57r13
+67U14 Put 67b14 67>19 79l8 79t11 98s7 100s7
+67a19 Sub_Data{12A9} 70r24 71r14 73r18
+70e11 I{character} 71r23 73r13
+82U14 Get 82b14 82<19 92l8 92t11 160s4
+82a19 Data{15A9} 88m11 88r11 90m11 90r11
+84e7 L{character} 89m11
+95U14 Put 95b14 95>19 102l8 102t11 163s4
+95a19 Data{15A9} 98r11 100r11
+105U14 Get 105b14 105<19 115l8 115t11 169s4
+105a19 Data{18A9} 109r16 110r19 111m17 111r17
+109i11 N{integer} 111r22
+110e14 M{character} 111r24
+118U14 Put 118b14 118>19 140l8 140t11 172s4
+118a19 Data{18A9} 124r16 125r19 126r17 128r21 134r18
+124i11 N{integer} 126r22 134r13
+125e14 M{character} 126r24 128r16
+142a4 Ds1{9A9} 151m8 154r8
+143a4 Ds2{15A9} 160m8 163r8
+144a4 Ds3{18A9} 169m8 172r8
+
