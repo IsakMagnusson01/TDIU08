@@ -93,32 +93,26 @@ procedure Test_Exceptions is
       
    end Leap_Year;
 
-   function Control_Days (Item : in String)
+   function Control_Days (Item : in Date_Type)
 			 return Boolean is
-      
-      Year, Month, Day : Integer;
       
    begin
       
-      Year := Integer'Value(Item(Item'First..Item'First+3));
-      Month := Integer'Value(Item(Item'First+5..Item'First+6));
-      Day := Integer'Value(Item(Item'First+8..Item'Last));
-      
       -- Dag kan vara minst 1 och högst 31
-      if Day < 1 or Day > 31 then
+      if Item.Day < 1 or Item.Day > 31 then
 	 return False;
       end if;
 	 
-      case Month is
+      case Item.Month is
 	 when 1 | 3 | 5 | 7..8 | 10 | 12 =>
-	    return Day <= 31;
+	    return Item.Day <= 31;
 	 when 4 | 6 | 9 | 11 =>
-	    return Day <= 30;
+	    return Item.Day <= 30;
 	 when 2 =>
-	    if not Leap_Year(Year, Month, Day) then
-	       return Day <= 28;
+	    if not Leap_Year(Item.Year, Item.Month, Item.Day) then
+	       return Item.Day <= 28;
 	    else
-	       return Day <= 29;
+	       return Item.Day <= 29;
 	    end if;
 	 when others =>
 	    raise Month_Error;
@@ -126,18 +120,8 @@ procedure Test_Exceptions is
       
    end Control_Days;
    
-   procedure Get (Item : out Date_Type) is
-      
-      S : String(1..10);
-      
+   procedure Control_Format (S : in String) is
    begin
-      
-      begin
-	 Get_Correct_String(S);
-      exception
-	 when Length_Error =>
-	    raise Format_Error;
-      end;
       
       for I in 1..10 loop
 	 case I is
@@ -152,21 +136,38 @@ procedure Test_Exceptions is
 	 end case;
       end loop;
       
-      if Integer'Value(S(1..4)) < 1532 or Integer'Value(S(1..4)) > 9000 then
-	 raise Year_Error;
-      end if;
+   end Control_Format;
+   
+   procedure Get (Item : out Date_Type) is
       
-      if Integer'Value(S(6..7)) < 1 or Integer'Value(S(6..7)) > 12 then
-	 raise Month_Error;
-      end if;
+      S : String(1..10);
       
-      if not Control_Days(S) then
-	 raise Day_Error;
-      end if;
+   begin
+      
+      begin
+	 Get_Correct_String(S);
+      exception
+	 when Length_Error =>
+	    raise Format_Error;
+      end;
+      
+      Control_Format(S);
       
       Item.Year := Integer'Value(S(1..4));
       Item.Month := Integer'Value(S(6..7));
       Item.Day := Integer'Value(S(9..10));
+      
+      if Item.Year < 1532 or Item.Year > 9000 then
+	 raise Year_Error;
+      end if;
+      
+      if Item.Month < 1 or Item.Month > 12 then
+	 raise Month_Error;
+      end if;
+      
+      if not Control_Days(Item) then
+	 raise Day_Error;
+      end if;
       
    end Get;
    
