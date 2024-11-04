@@ -12,7 +12,7 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U test_exceptions%b	test_exceptions.adb	77a601d6 NE OO SU
+U test_exceptions%b	test_exceptions.adb	d0be0373 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -50,7 +50,7 @@ D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
 D s-valint.ads		20230707070819 b5ff6963 system.val_int%s
 D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
-D test_exceptions.adb	20241104151957 2f195d1f test_exceptions%b
+D test_exceptions.adb	20241104153256 88015fba test_exceptions%b
 G a e
 G c Z b b [test_exceptions standard 5 11 none]
 X 1 ada.ads
@@ -74,7 +74,7 @@ X 8 a-tiinio.ads
 80U14*Put 27|35s13[3|18] 37s13[3|18] 183s7[3|18] 187s13[3|18] 189s10[3|18]
 . 236s7[3|18] 256s7[3|18]
 82i7 Width{7|86I12} 27|35r22[3|18] 37r22[3|18] 183r22[3|18] 187r20[3|18]
-. 189r17[3|18] 236r18[3|18] 256r19[3|18]
+. 189r24[3|18] 236r18[3|18] 256r19[3|18]
 X 27 test_exceptions.adb
 5U11*Test_Exceptions 5b11 344l5 344t20
 15X4 Length_Error 77r19 153r15 330r18
@@ -111,8 +111,8 @@ X 27 test_exceptions.adb
 146a7 S{string} 151m29 157r22 159r34 160r35 161r33
 177U14 Put 177b14 177>19 192l8 192t11 299s7
 177r19 Item{21R9} 179r31 179r43 183r11
-179a7 Index{25A9} 184r16
-184i11 I=184:16{integer} 186r13 189r14
+179a7 Index{25A9} 186r13 189r14
+184i11 I{integer} 186r19 189r20
 194V13 Menu_Selection{integer} 194b13 212l8 212t22 317s17
 196i7 N{integer} 206m14 207r20 211r14
 223U14 Upg1 223b14 238l8 238t12 320s10

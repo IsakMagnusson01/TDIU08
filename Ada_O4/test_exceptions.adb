@@ -181,12 +181,12 @@ procedure Test_Exceptions is
    begin
       
       Put(Item.Year, Width => 0);
-      for I of Index loop
+      for I in 1..2 loop
 	 Put('-');
-	 if I < 10 then
+	 if Index(I) < 10 then
 	    Put(0, Width => 0);
 	 end if;
-	 Put(I, Width => 0);
+	 Put(Index(I), Width => 0);
       end loop;
       
    end Put;
