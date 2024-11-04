@@ -22,6 +22,9 @@ procedure Test_Exceptions is
       Year, Month, Day : Integer;
    end record;
    
+   type Data_Access is array
+     (1..2) of Integer;
+   
    procedure Get_Safe (Value : out Integer;
 		       Min, Max : in Integer) is
    begin
@@ -172,19 +175,19 @@ procedure Test_Exceptions is
    end Get;
    
    procedure Put (Item : in Date_Type) is
+      
+      Index : Data_Access := (Item.Month, Item.Day);
+      
    begin
       
       Put(Item.Year, Width => 0);
-      Put('-');
-      if Item.Month < 10 then
-	 Put(0, Width => 0);
-      end if;
-      Put(Item.Month, Width => 0);
-      Put('-');
-      if Item.Day < 10 then
-	 Put(0, Width => 0);
-      end if;
-      Put(Item.Day, Width => 0);
+      for I of Index loop
+	 Put('-');
+	 if I < 10 then
+	    Put(0, Width => 0);
+	 end if;
+	 Put(I, Width => 0);
+      end loop;
       
    end Put;
    
