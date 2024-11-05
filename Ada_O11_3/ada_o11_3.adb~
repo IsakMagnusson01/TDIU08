@@ -1,0 +1,14 @@
+-- isama219: Arbetat enskilt
+with Ada.Text_Io;                  use Ada.Text_Io;
+with Ada.Integer_Text_Io;          use Ada.Integer_Text_Io;
+with Ada.Numerics.Discrete_Random;
+
+procedure Ada_O11_3 is
+   
+   Number_Of_Integers : Integer;
+   
+begin
+   
+   Get(Number_Of_Integers)
+   
+end Ada_O11_3;
