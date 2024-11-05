@@ -178,10 +178,12 @@ procedure Test_Exceptions is
       if Item.Month < 10 then
 	 Put(0, Width => 0);
       end if;
+      Put(Item.Month, Width => 0);
       Put('-');
       if Item.Day < 10 then
 	 Put(0, Width => 0);
       end if;
+      Put(Item.Day, Width => 0);
       
    end Put;
    
