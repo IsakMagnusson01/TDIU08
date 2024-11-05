@@ -22,9 +22,6 @@ procedure Test_Exceptions is
       Year, Month, Day : Integer;
    end record;
    
-   type Data_Access is array
-     (1..2) of Integer;
-   
    procedure Get_Safe (Value : out Integer;
 		       Min, Max : in Integer) is
    begin
@@ -82,13 +79,11 @@ procedure Test_Exceptions is
       
    end Get_Correct_String;
    
-   function Leap_Year (Year, Month, Day : in Integer)
+   function Leap_Year (Item : in Date_Type)
 		      return Boolean is
    begin
       
-      if Year mod 400 = 0 then
-	 return True;
-      elsif Year mod 4 = 0 and Year mod 100 /= 0 then
+      if (Item.Year mod 400 = 0) or (Item.Year mod 4 = 0 and Item.Year mod 100 /= 0) then
 	 return True;
       else
 	 return False;
@@ -112,7 +107,7 @@ procedure Test_Exceptions is
 	 when 4 | 6 | 9 | 11 =>
 	    return Item.Day <= 30;
 	 when 2 =>
-	    if not Leap_Year(Item.Year, Item.Month, Item.Day) then
+	    if not Leap_Year(Item) then
 	       return Item.Day <= 28;
 	    else
 	       return Item.Day <= 29;
@@ -175,19 +170,18 @@ procedure Test_Exceptions is
    end Get;
    
    procedure Put (Item : in Date_Type) is
-      
-      Index : Data_Access := (Item.Month, Item.Day);
-      
    begin
       
+   -- Hittar inget sätt att iterera över en record, så kan inte lösa uppräkningen här
       Put(Item.Year, Width => 0);
-      for I in 1..2 loop
-	 Put('-');
-	 if Index(I) < 10 then
-	    Put(0, Width => 0);
-	 end if;
-	 Put(Index(I), Width => 0);
-      end loop;
+      Put('-');
+      if Item.Month < 10 then
+	 Put(0, Width => 0);
+      end if;
+      Put('-');
+      if Item.Day < 10 then
+	 Put(0, Width => 0);
+      end if;
       
    end Put;
    
