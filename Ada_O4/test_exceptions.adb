@@ -169,21 +169,24 @@ procedure Test_Exceptions is
       
    end Get;
    
+   procedure Single_Digit_Date_Format (I : Integer) is
+   begin
+      
+      Put('-');
+      if I < 10 then
+	 Put(0, Width => 0);
+      end if;
+      Put(I, Width => 0);
+      
+   end Single_Digit_Date_Format;
+   
    procedure Put (Item : in Date_Type) is
    begin
       
    -- Hittar inget sätt att iterera över en record, så kan inte lösa uppräkningen här
       Put(Item.Year, Width => 0);
-      Put('-');
-      if Item.Month < 10 then
-	 Put(0, Width => 0);
-      end if;
-      Put(Item.Month, Width => 0);
-      Put('-');
-      if Item.Day < 10 then
-	 Put(0, Width => 0);
-      end if;
-      Put(Item.Day, Width => 0);
+      Single_Digit_Date_Format(Item.Month);
+      Single_Digit_Date_Format(Item.Day);
       
    end Put;
    
