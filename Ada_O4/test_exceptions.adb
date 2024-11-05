@@ -183,7 +183,6 @@ procedure Test_Exceptions is
    procedure Put (Item : in Date_Type) is
    begin
       
-   -- Hittar inget sätt att iterera över en record, så kan inte lösa uppräkningen här
       Put(Item.Year, Width => 0);
       Single_Digit_Date_Format(Item.Month);
       Single_Digit_Date_Format(Item.Day);
