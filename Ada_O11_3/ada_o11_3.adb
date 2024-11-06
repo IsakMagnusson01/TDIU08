@@ -43,7 +43,7 @@ procedure Ada_O11_3 is
 			 return Float is
    begin
       
-      return Ada.Numerics.Float_Random.Random(G) * ((Min+Max)/Float(2));
+      return Min + Ada.Numerics.Float_Random.Random(G) * (Max - Min);
       
    end Random_Float;
    
@@ -55,9 +55,9 @@ procedure Ada_O11_3 is
    
 begin
    
-   Reset(G1);
-   Reset(G2);
-   Reset(G3);
+   --Reset(G1);
+   --Reset(G2);
+   --Reset(G3);
    
    -- Del 1
    Put("Mata in antalet heltal som ska slumpas: ");
@@ -97,6 +97,7 @@ begin
    Put(Min, Fore => 1, Aft => 2, Exp => 0);
    Put(" och ");
    Put(Max, Fore => 1, Aft => 2, Exp => 0);
+   
    Put(": ");
    Put(Random_Float(G3, Min, Max), Fore => 1, Aft => 2, Exp => 0);
    
