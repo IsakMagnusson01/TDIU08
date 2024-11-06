@@ -73,8 +73,7 @@ procedure Test_Exceptions is
 	 if End_Of_Line then
 	    raise Length_Error;
 	 end if;
-	 Get(C);
-	 S(I) := C;
+	 Get(S(I));
       end loop;
       
    end Get_Correct_String;
